@@ -9,7 +9,7 @@ class TrioTest {
     fun orange_orange_black() = assertEquals("33 ohms", ResistorColorTrio.text(ORANGE, ORANGE, BLACK))
 
     @Test
-    fun orange_orange_red() = assertEquals("3300 ohms", ResistorColorTrio.text(ORANGE, ORANGE, RED))
+    fun orange_orange_red() = assertEquals("3.3 kiloohms", ResistorColorTrio.text(ORANGE, ORANGE, RED))
 
     @Test
     fun orange_orange_orange() = assertEquals("33 kiloohms", ResistorColorTrio.text(ORANGE, ORANGE, ORANGE))
@@ -18,6 +18,9 @@ class TrioTest {
     fun orange_orange_green() = assertEquals("3.3 megaohms", ResistorColorTrio.text(ORANGE, ORANGE, GREEN))
 
     @Test
-    fun orange_orange_grey() = assertEquals("3.3 megaohms", ResistorColorTrio.text(ORANGE, ORANGE, GREY))
+    fun orange_orange_grey() = assertEquals("3.3 gigaohms", ResistorColorTrio.text(ORANGE, ORANGE, GREY))
+
+    @Test
+    fun orange_orange_blue() = assertEquals("33 megaohms", ResistorColorTrio.text(ORANGE, ORANGE, BLUE))
 
 }

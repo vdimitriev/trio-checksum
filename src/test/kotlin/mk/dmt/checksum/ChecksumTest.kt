@@ -6,5 +6,8 @@ import org.junit.Test
 class ChecksumTest {
 
     @Test
-    fun validcreditcardnumber() = assertEquals(true, Checksum.isValid("4539 1488 0343 6467"))
+    fun valid_credit_card_number() = assertEquals(true, Checksum.isValid("4539 1488 0343 6467"))
+
+    @Test
+    fun invalid_credit_card_number() = assertEquals(false, Checksum.isValid("4539 1488 0343 6567"))
 }
